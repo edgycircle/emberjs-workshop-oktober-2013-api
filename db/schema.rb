@@ -29,8 +29,8 @@ ActiveRecord::Schema.define(version: 20131015125830) do
   add_index "tasks", ["project_id"], name: "index_tasks_on_project_id"
 
   create_table "time_entries", force: true do |t|
-    t.date     "started_at"
-    t.date     "ended_at"
+    t.datetime "started_at"
+    t.datetime "ended_at"
     t.integer  "task_id"
     t.datetime "created_at"
     t.datetime "updated_at"
